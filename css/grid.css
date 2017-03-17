@@ -1,0 +1,112 @@
+[class^='col-'] {
+    float: left;
+    padding: 0;
+}
+[class*='col-1of5'] {
+    margin-right: 0px;
+}
+[class*='col-1of5']:last-of-type {
+    margin-right: 0;
+}
+.col-5of10 {
+    width: 50%;
+}
+.col-5of10-tax {
+    width: 50%;
+}
+.col-5of10-ticket {
+    width: 50%;
+}
+.col-7of10 {
+    width: 70%;
+}
+.col-2of3 {
+    width: 66.66%;
+}
+.col-1of2 {
+    width: 50%;
+}
+.col-1of3 {
+    width: 33.33%;
+}
+.col-1of5 {
+    width: 20%;
+}
+.col-1of5-empty {
+    width: 20%;
+}
+.col-1of6 {
+    margin-right: 35px;
+}
+@media (max-width: 65em) {
+    .col-5of10 {
+        width: 100%;
+    }
+    .col-5of10-tax {
+        width: 100%;
+    }
+    .col-5of10-ticket {
+        width: 50%;
+    }
+    .col-2of10 {
+        width: 75%;
+    }
+    .col-2of3 {
+        width: 100%;
+    }
+    .col-2of10 {
+        width: 33.333%;
+    }
+}
+@media (max-width: 57.5em) {
+    .col-1of5 {
+        width: 33%;
+    }
+    .col-1of5-empty {
+        width: 0%;
+    }
+}
+@media (max-width: 43.5em) {
+    th,
+    td {
+        padding: 5px;
+        font-size: 10px;
+    }
+    td.date,
+    th.date {
+        display: none;
+    }
+}
+@media (max-width: 34em) {
+    .col-2of10 {
+        width: 100%;
+    }
+    .col-1of4 {
+        width: 100%;
+    }
+    .col-1of5 {
+        width: 100%;
+    }
+    .second-banner {
+        margin-bottom: 0px;
+        height: 800px;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    .payment-info {
+        font-size: 0.9em;
+        padding: 35px;
+    }
+    .form {
+        width: 240px;
+    }
+    .form-drop {
+        margin-right: 230px;
+    }
+}
+@media (max-width: 25em) {
+    .main-banner {
+        margin-top: -110px;
+    }
+}

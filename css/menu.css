@@ -1,0 +1,190 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+.navigation-bar {
+    margin-top: -56px;
+    margin-bottom: 125px;
+    text-align:center;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display: inline-block;
+    float: left;
+}
+
+/*Style for menu links*/
+li a {
+    z-index: 10;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 14px;
+    display: block;
+    min-width: 125px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #335267;
+    text-decoration: none;
+}
+
+
+.first-item a {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    min-width: 375px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+
+.first-item a:hover {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 375px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background: #284254;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: center;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 45px;
+    line-height: 45px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #E8E8E8;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    width: auto;
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: #2f3036;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    display: none;
+    margin-bottom: -16px;
+    border-bottom: 1px solid #262626;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 890px){
+    navigation-menu{
+    }
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        border-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+    .first-item ul li, li a {
+        width: 100%;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        width: 100%;
+        display: inline-block;
+    }
+}

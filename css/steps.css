@@ -1,0 +1,269 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+.steps {
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* styling for first progress bar */
+
+.one-first-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-left: 22px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    position: relative;
+    background: #335267;
+    text-decoration: none;
+    z-index: 5;
+}
+.one-first-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #335267;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.one-second-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-top: 40px;
+    position: relative;
+    background: #DBDBDB;
+    text-decoration: none;
+    z-index: 4;
+}
+.one-second-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #DBDBDB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.one-last-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: -5px;
+    position: relative;
+    background: #EBEBEB;
+    text-decoration: none;
+}
+.one-last-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #EBEBEB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+/* styling for progress bar on second page */
+
+.two-first-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 22px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    position: relative;
+    background: #EBEBEB;
+    text-decoration: none;
+    z-index: 5;
+}
+.two-first-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #EBEBEB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.two-second-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-top: 40px;
+    position: relative;
+    background: #335267;
+    text-decoration: none;
+    z-index: 4;
+}
+.two-second-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #335267;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.two-last-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: -5px;
+    position: relative;
+    background: #EBEBEB;
+    text-decoration: none;
+}
+.two-last-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #EBEBEB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+/* styling for progress bar on third page */
+
+.three-first-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 22px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    position: relative;
+    background: #EBEBEB;
+    text-decoration: none;
+    z-index: 5;
+}
+.three-first-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #EBEBEB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.three-second-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #404040;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-top: 40px;
+    position: relative;
+    background: #DBDBDB;
+    text-decoration: none;
+    z-index: 4;
+}
+.three-second-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #DBDBDB;
+    border-width: 19px;
+    margin-top: -19px;
+}
+.three-last-step {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-left: -5px;
+    position: relative;
+    background: #335267;
+    text-decoration: none;
+}
+.three-last-step:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #335267;
+    border-width: 19px;
+    margin-top: -19px;
+}
+@media (max-width: 47.5em) {
+    .steps {
+        display: none;
+    }
+}
